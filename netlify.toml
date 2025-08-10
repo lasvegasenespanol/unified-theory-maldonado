@@ -1,0 +1,18 @@
+# Netlify configuration for a static one-page site
+[build]
+  publish = "."   # 'index.html' at project root
+
+# Cache images and PDFs aggressively; allow quick replacement on bust
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+    X-Content-Type-Options = "nosniff"
+
+# Basic security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer-when-downgrade"
