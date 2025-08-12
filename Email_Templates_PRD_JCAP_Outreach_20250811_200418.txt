@@ -1,0 +1,13 @@
+PRD Presubmission Email
+To: prd@aps.org
+Subject: Presubmission: Brane-cosmology link between GW break f_br and ΔN_eff (single-parameter λ)
+[Body matches the draft provided in the chat]
+
+JCAP Presubmission Email
+To: jcap-eo@jhep.sissa.it
+Subject: Presubmission enquiry: Brane-cosmology ρ² era with GW break f_br(λ) and ΔN_eff
+[Body matches the draft provided in the chat]
+
+First-contact outreach
+Subject: A testable bridge from quantum gravity to data: GW break f_br(λ) ↔ ΔN_eff
+[Body matches the draft provided in the chat]
