@@ -1,0 +1,74 @@
+=== Plain-text email bodies ===
+
+Subject: Presubmission: Testable brane-world unification (ρ² term, dark radiation, GW break)
+
+To: prl@aps.org
+
+Body:
+
+Dear PRL Editors,
+
+I would like to inquire about suitability for PRL of the attached Letter draft and figures:
+  • A testable brane-world unification with early-time ρ² and dark radiation
+  • One parameter (brane tension λ) fixes a GW spectral break f_br∝λ^{1/4} and correlates with ΔN_eff
+  • Posteriors use the official NANOGrav 15-yr KDE spectrum with a Planck-2018 N_eff prior; LISA context included
+
+Attachments:
+  • PRL_Submission_Lite_20250813_000923.pdf
+  • Unified_Theory_All_in_One_PLUS_Addendum_20250813_000150.pdf
+  • JCAP_class_src_20250813_002258.zip (LaTeX JCAP) and REVTeX42_PRL_src_20250813_002258.zip (REVTeX PRL sources)
+
+Best regards,
+Ricardo Maldonado
+sales@rank.vegas
+
+
+Subject: Presubmission: Brane-world unification (early-time ρ² term + dark radiation)
+
+To: prd@aps.org
+
+Body:
+
+Dear PRD Editors,
+
+Please find a short Article-style submission (and figures) proposing a falsifiable brane-world cosmology: the Friedmann equation receives a ρ² correction and dark-radiation term; a single λ sets the GW break and correlates with ΔN_eff. We use the official NANOGrav 15-yr KDE spectrum and a Planck-2018 N_eff prior; late-time GR consistency is maintained.
+
+Attachments:
+  • PRD_Submission_Lite_20250813_000923.pdf
+  • Unified_Theory_All_in_One_PLUS_Addendum_20250813_000150.pdf
+  • REVTeX42_PRD_src_20250813_002258.zip (REVTeX PRD sources)
+
+Sincerely,
+Ricardo Maldonado
+sales@rank.vegas
+
+
+Subject: Presubmission: Testable brane-world cosmology (ρ² + dark radiation; PTA→LISA links)
+
+To: jcap-eo@jcap.sissa.it
+
+Body:
+
+Dear JCAP Editorial Office,
+
+I would like to submit a short Letter derived from a higher-D brane setup leading to an effective 4-D Friedmann equation with a ρ² term and a dark-radiation contribution. A single parameter λ fixes a GW spectral break and correlates with ΔN_eff; we use the official NANOGrav 15-yr KDE spectrum with a Planck-2018 prior. Figures include a PTA→LISA context overlay (instrument vs instrument+confusion).
+
+Attachments:
+  • JCAP_Submission_Lite_20250813_000923.pdf
+  • Unified_Theory_All_in_One_PLUS_Addendum_20250813_000150.pdf
+  • JCAP_class_src_20250813_002258.zip (JCAP class sources)
+
+Best regards,
+Ricardo Maldonado
+sales@rank.vegas
+
+
+=== Submission checklists (quick) ===
+
+- Equations render correctly (no missing fonts/boxes).
+- Figures sized ≤ 1 page, readable at 100%.
+- References included; DOIs can be added in final pass.
+- Include data provenance note (NANOGrav KDE spectrum; Planck-2018 N_eff prior).
+- Late-time GR limit statement (PPN/binary pulsar bounds) present.
+- Source packages compile locally (pdflatex/bibtex).
+- Replace analytic LISA curve with official CSV before final publication.
