@@ -1,0 +1,9 @@
+{
+  "pta_csv_used": "PTA_public_anchor_NANOGrav15_20250812_211641.csv",
+  "cmb_prior_used": "CMB_Planck2018_DeltaNeff_20250812_211641.json",
+  "f_br_Hz_best": 7.067181273927477e-09,
+  "DeltaNeff_best": -0.05778894472361806,
+  "sigma_logf_dex": 0.31818181818181834,
+  "lambda_best_arbitrary_units": 2.494508135230296e-33,
+  "lambda_units_note": "lambda \u221d f_br^4 with f0=1 Hz scaling (arbitrary units for demo)"
+}
