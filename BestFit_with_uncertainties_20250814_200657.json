@@ -1,0 +1,7 @@
+{
+  "f_br_Hz": 2.016148945797146e-08,
+  "f_br_err_halfdex": 0.0060301507537690036,
+  "slope_low": -1.4847907542362373,
+  "slope_high": -0.2303092557374199,
+  "note": "Demo fit; uncertainties are approximate (grid spacing)."
+}

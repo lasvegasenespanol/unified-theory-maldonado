@@ -1,0 +1,30 @@
+# Data & Repro Pack — Maldonado (2025)
+# Version: v1.1.0 (REALDATA)
+# Generated: 2025-08-14T21:38:00Z
+
+PRIMARY_PDF
+  Results_TwoPager_REFRESH_20250814_200726.pdf
+PTA_CSV
+  exported_pta_spectrum_HD_30f.csv
+  exported_pta_spectrum_CP_30f.csv
+  exported_pta_spectrum_HD_30f_100fDMGP.csv
+LISA_CSV
+  ESA_RCL2019_10yr_instrument_PLUS_confusion.csv
+PRIORS_AND_RESULTS
+  CMB_Planck2018_DeltaNeff_prior.json
+  BestFit_with_uncertainties_20250814_200657.json
+DOCS
+  README_arXiv.txt
+  README_Data_and_Repro.txt
+  columns_and_units.txt
+  MANIFEST.txt
+  CHECKSUMS.txt
+SCRIPT
+  reproduce_posteriors.py
+PREVIEWS
+  PTA_HD_30f_preview.png
+  PTA_CP_30f_preview.png
+  PTA_HD_30f_preview_fromOfficial.png
+  PTA_CP_30f_preview_fromOfficial.png
+  LISA_preview_20250814_203901.png
+  PTA_fit_with_LISA_overlay_20250814_200657.png

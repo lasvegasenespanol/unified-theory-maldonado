@@ -1,0 +1,12 @@
+Column schema
+-------------
+PTA_public_anchor_demo.csv:
+  - freq_Hz : frequency in Hz
+  - log10rho_median : median of log10 rho (demo units)
+  - log10rho_p16    : 16th percentile (log10 rho)
+  - log10rho_p84    : 84th percentile (log10 rho)
+
+ESA_RCL2019_*_demo.csv:
+  - f_Hz         : frequency in Hz
+  - Sn_1_per_Hz  : one-sided strain noise PSD [1/Hz]
+  - label        : text label for the curve

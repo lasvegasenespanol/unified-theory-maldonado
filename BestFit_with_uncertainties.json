@@ -1,0 +1,7 @@
+{
+  "f_br_Hz": 3e-08,
+  "slope_low": -1.2,
+  "slope_high": -4.0,
+  "rss": 0.05,
+  "notes": "Demo fit to PTA CSV; illustration only."
+}

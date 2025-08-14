@@ -1,0 +1,51 @@
+Data & Repro Pack for “A testable brane‑world unification: one parameter links a GW spectral break and ΔN_eff” (Maldonado, 2025-08-14)
+
+Summary
+-------
+Machine‑readable files and a minimal script sufficient to regenerate the figures and key checks:
+(1) a broken‑power‑law fit to a pulsar‑timing‑array (PTA) stochastic GW spectrum with a single break frequency f_br,
+(2) LISA sensitivity overlays in CSV (ESA‑style headers),
+(3) a compact two‑page PDF (equations + plots), and
+(4) a small JSON of best‑fit parameters (demo).
+
+Files included
+--------------
+- PTA_public_anchor_demo.csv
+- ESA_RCL2019_4yr_instrument_ONLY_demo.csv
+- ESA_RCL2019_4yr_instrument_PLUS_confusion_demo.csv
+- ESA_RCL2019_10yr_instrument_ONLY_demo.csv
+- ESA_RCL2019_10yr_instrument_PLUS_confusion_demo.csv
+- BestFit_with_uncertainties_demo.json
+- PTA_fit_brokenPL_demo.png
+- PTA_fit_with_LISA_demo.png
+- Results_TwoPager_DEMO.pdf
+- reproduce_posteriors.py
+- columns_and_units.txt
+- README_Data_and_Repro.txt
+
+Column schema
+-------------
+LISA CSVs: f_Hz [Hz], Sn_1_per_Hz [1/Hz], label [string]
+PTA CSV:  freq_Hz [Hz], log10rho_median, log10rho_p16, log10rho_p84
+
+How to reproduce
+----------------
+1) Run reproduce_posteriors.py (Python 3 with numpy, pandas, matplotlib).
+2) It reads the PTA CSV, fits a broken power law in log‑space, prints f_br, and saves plots + JSON.
+3) To go from demo to publication‑grade: replace PTA_public_anchor_demo.csv with an official export (e.g., exported_pta_spectrum.csv derived from the NANOGrav KDE free‑spectrum package) and use an official LISA sensitivity CSV.
+
+Purpose
+-------
+To enable independent inspection and quick regeneration of:
+- The SGWB broken‑power‑law shape and break frequency f_br(λ) ∝ λ^(1/4).
+- The mapping of the dark‑radiation constant to ΔN_eff via
+  C / ρ_γ,0 = (7/8) * (4/11)^(4/3) * ΔN_eff.
+
+License
+-------
+CC BY 4.0 (Ricardo Maldonado). Cite as a dataset and link the associated manuscript/preprint when available.
+
+Notes
+-----
+- Demo numbers are placeholders for exercising the pipeline; swap in official PTA/LISA CSVs for real analyses.
+- Third‑party packages and journal submission bundles are not hosted here; cite or link them under “Related works” in Zenodo.
