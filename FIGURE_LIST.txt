@@ -1,0 +1,7 @@
+FIGURE LIST (generated 2025-08-14 01:05 UTC)
+- Results_TwoPager_REALDATA_LISA_ESA_20250814_010448.pdf  : Two-Pager with ESA LISA curves (4-yr/10-yr; inst-only and +confusion).
+- RS_ToyEmbedding_20250814_004717.pdf   : RS toy explicit embedding.
+- Einstein_Consistency_20250814_004717.pdf  : Einstein/PPN consistency.
+- Quark_CKM_ToyNote_20250814_004717.pdf  : Quark/CKM toy note.
+- Press_Release_APPEND_20250814_010448.pdf: Press release page.
+- Cover_Letter_PRL_20250814_010448.pdf, Cover_Letter_PRD_20250814_010448.pdf, Cover_Letter_JCAP_20250814_010448.pdf: Journal cover letters.
