@@ -4,115 +4,75 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ricardo Maldonado — Unified Theory of Everything</title>
-  <meta name="description" content="Testable brane-world cosmology: one parameter (brane tension λ) links a GW spectral break and ΔN_eff.">
-  <link rel="stylesheet" href="assets/styles.css">
-  <meta property="og:title" content="Unified Theory of Everything — Maldonado">
-  <meta property="og:description" content="Testable brane-world cosmology with falsifiable predictions: GW spectral break & ΔN_eff.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://lasvegasenespanol.github.io/unified-theory-maldonado/">
+  <meta name="description" content="A testable brane-world unification: one parameter links a GW spectral break and ΔN_eff.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- MathJax CDN for equations -->
   <script>
-    function toggleTheme(){ document.documentElement.classList.toggle('dark'); }
+    MathJax = {{ tex: {{ inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']] }} }};
   </script>
-  <script>
-    MathJax = { tex: {inlineMath: [['$', '$'], ['\\(', '\\)']] }, svg: {fontCache: 'global'} };
-  </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <header class="container hero">
-    <div class="brand">
-      <h1>Unified Theory of Everything</h1>
-      <p class="byline">Ricardo Maldonado — Independent Researcher • <a href="mailto:sales@rank.vegas">sales@rank.vegas</a></p>
-    </div>
-    <div class="actions">
-      <a class="btn primary" href="https://doi.org/10.5281/zenodo.16868085" target="_blank" rel="noopener">Zenodo Dataset (DOI 10.5281/zenodo.16868085)</a>
-      <a class="btn" href="#downloads">Downloads</a>
-      <button class="btn ghost" onclick="toggleTheme()">Toggle theme</button>
-    </div>
-  </header>
 
-  <main>
-    <section class="container pitch">
-      <h2>Plain-English Summary</h2>
-      <p>
-        This project proposes a testable brane–world cosmology. Our 4‑D universe (a “brane”) sits in a higher‑D bulk.
-        The resulting 4‑D expansion law gets a high‑energy correction and a “dark‑radiation” term. A single parameter—the brane tension $\lambda$—
-        must simultaneously match a gravitational‑wave spectral break and the CMB/BBN radiation budget. That gives a clean pass/fail test.
-      </p>
-    </section>
+<header class="hero">
+  <div class="container">
+    <div class="kicker">A testable unification</div>
+    <h1>Ricardo Maldonado’s<br>Unified Theory of Everything</h1>
+    <p class="subtitle">
+      We model the universe as a 4‑D brane in a higher‑D bulk. The effective FRW equation acquires a high‑energy $\rho^2$ term and a dark‑radiation term. One parameter—the brane tension $\lambda$—links a predicted gravitational‑wave spectral break to an early‑universe radiation excess ($\Delta N_{\rm eff}$). That gives a single pass/fail rule across PTA→LISA and CMB/BBN.
+    </p>
+    <div class="cta">
+      <a class="btn" href="assets/downloads/Unified_Theory_ALL_in_ONE.pdf" download>Download All‑in‑One PDF</a>
+      <a class="btn secondary" href="assets/downloads/Results_TwoPager.pdf" download>Download Results Two‑Pager</a>
+    </div>
+    <p class="small" style="margin-top:10px;">
+      Zenodo data & repro pack: DOI 10.5281/zenodo.16868085
+    </p>
+  </div>
+</header>
 
-    <section class="container eqn">
-      <h2>The Core Equation</h2>
-      <p class="equation">
+<main>
+  <section class="section">
+    <div class="container">
+      <h2>The grand equation (flat FRW)</h2>
+      <div class="card">
+        <p style="font-size:1.05rem">
         $$
         H^2 \,=\, \frac{8\pi G}{3}\,\rho\!\left(1+\frac{\rho}{2\lambda}\right)
-        \, + \, \frac{\Lambda_{4}}{3} \, + \, \frac{\mathcal{C}}{a^{4}} \quad (k=0)
+        \, + \, \frac{\Lambda_{4}}{3} \, + \, \frac{\mathcal{C}}{a^{4}} \qquad (k=0)
         $$
-      </p>
-      <div class="grid two">
-        <div>
-          <h3>Test Link #1: GW Spectral Break</h3>
-          <p>
-            $$f_{\rm br}(\lambda)\;\propto\;\lambda^{1/4}$$
-            Transition from the $\rho^2$ era to standard 4‑D expansion—
-            checkable with Pulsar Timing Arrays now and LISA next.
-          </p>
-        </div>
-        <div>
-          <h3>Test Link #2: Early‑Radiation Budget</h3>
-          <p>
-            $$\frac{\mathcal{C}}{\rho_{\gamma,0}}\;=\;\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\Delta N_{\rm eff}$$
-            A single $\lambda$ must fit both the break and $\Delta N_{\rm eff}$.
-          </p>
-        </div>
+        </p>
+        <p class="small">
+          Tests that make it falsifiable:
+          $$ f_{\rm br}(\lambda) \propto \lambda^{1/4}, \qquad \frac{\mathcal{C}}{\rho_{\gamma,0}} = \frac{7}{8}\left(\frac{4}{11}\right)^{4/3} \Delta N_{\rm eff}. $$
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="downloads" class="container downloads">
-      <h2>Downloads</h2>
-      <ul class="cards">
-        <li class="card">
-          <h3>All‑in‑One Explainer (PDF)</h3>
-          <p>Concise overview with figures and captions.</p>
-          <a class="btn" href="assets/downloads/Unified_Theory_ALL_in_ONE.pdf">Download</a>
-          <small>Place your latest All‑in‑One PDF at <code>assets/downloads/Unified_Theory_ALL_in_ONE.pdf</code></small>
-        </li>
-        <li class="card">
-          <h3>Results Two‑Pager (PDF)</h3>
-          <p>Equations, PTA fit preview, LISA overlay.</p>
-          <a class="btn" href="assets/downloads/Results_TwoPager.pdf">Download</a>
-          <small>Place the Two‑Pager at <code>assets/downloads/Results_TwoPager.pdf</code></small>
-        </li>
-        <li class="card">
-          <h3>Repro Pack (ZIP)</h3>
-          <p>CSV + small script to regenerate plots. Mirrors Zenodo.</p>
-          <a class="btn" href="https://doi.org/10.5281/zenodo.16868085" target="_blank" rel="noopener">Open on Zenodo</a>
-        </li>
-      </ul>
-      <p class="note">
-        Tip: If you host big files on Zenodo, you can still link them here. Keep this repo light for fast GitHub Pages loads.
-      </p>
-    </section>
+  <section class="section">
+    <div class="container grid">
+      <div class="card">
+        <h3>How to cite</h3>
+        <p class="small">Maldonado, R. (2025). Data &amp; Repro Pack. Zenodo. <span class="code">10.5281/zenodo.16868085</span></p>
+      </div>
+      <div class="card">
+        <h3>Contact</h3>
+        <p class="small">sales@rank.vegas</p>
+      </div>
+      <div class="card">
+        <h3>Quick view</h3>
+        <p class="small">All key plots and equations appear in the Two‑Pager. Full narrative, equations, and predictions are in the All‑in‑One PDF.</p>
+      </div>
+    </div>
+  </section>
+</main>
 
-    <section class="container details">
-      <h2>What Would Confirm or Falsify It?</h2>
-      <ul>
-        <li><strong>Confirm:</strong> A GW break at the predicted frequency from the same $\lambda$ that also satisfies CMB/BBN $\Delta N_{\rm eff}$.</li>
-        <li><strong>Falsify:</strong> No break where required, or the necessary $\lambda$ violates $\Delta N_{\rm eff}$ bounds.</li>
-      </ul>
-    </section>
+<footer class="footer">
+  <div class="container">
+    © 2025 Ricardo Maldonado · Independent Researcher · This page is static (GitHub Pages ready).
+  </div>
+</footer>
 
-    <section class="container contact">
-      <h2>Contact</h2>
-      <p>Ricardo Maldonado — <a href="mailto:sales@rank.vegas">sales@rank.vegas</a></p>
-      <p><a href="https://doi.org/10.5281/zenodo.16868085" target="_blank" rel="noopener">Zenodo record</a></p>
-    </section>
-  </main>
-
-  <footer class="container footer">
-    <p>© 2025 Ricardo Maldonado • CC BY 4.0 • Built for GitHub Pages</p>
-  </footer>
-
-  <script src="assets/script.js"></script>
 </body>
 </html>
