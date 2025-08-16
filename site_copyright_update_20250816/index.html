@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unified Theory — Maldonado</title>
+  <meta name="description" content="A compact, testable brane-world framework connecting early-universe dynamics to gravitational-wave and radiation observables." />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <!-- MathJax for real equations -->
+  <script>
+    window.MathJax = {{ tex: {{inlineMath: [['$','$'],['\\(','\\)']]}} }};
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Ricardo Maldonado — Unified Theory of Everything</h1>
+    <p>A compact, testable brane‑world framework: one parameter links a GW spectral break and $\Delta N_\mathrm{{eff}}$.</p>
+    <nav class="site-nav">
+      <a href="#abstract">Abstract</a>
+      <a href="#equation">Grand Equation</a>
+      <a href="#results">Results</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#wip">Work‑in‑Progress</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="abstract">
+      <h2>Abstract</h2>
+      <div class="card small">
+        We model our 4‑D universe as a brane embedded in a higher‑D bulk. Projecting the higher‑D field equations yields a modified 4‑D Friedmann equation with a high‑energy correction and a dark‑radiation term. 
+        The framework is falsifiable because a single parameter (the brane tension $\lambda$) must simultaneously match a stochastic GW break frequency $f_\mathrm{{br}}(\lambda)\propto\lambda^{{1/4}}$ and an early‑time radiation excess $\Delta N_\mathrm{{eff}}$ via a fixed mapping.
+      </div>
+    </section>
+
+    <section id="equation">
+      <h2>Grand Equation (flat FRW, $k=0$)</h2>
+      <div class="card">
+        <p style="font-size:1.05rem">
+          $$
+          H^2 \,=\, \frac{{8\pi G}}{{3}}\,\rho\!\left(1+\frac{{\rho}}{{2\lambda}}\right)
+          \, + \, \frac{\Lambda_4}{3} \, + \, \frac{\mathcal{{C}}}{a^{4}}\,.
+          $$
+        </p>
+        <p class="small">
+          Tests used here:
+          $$f_\mathrm{{br}}(\lambda) \propto \lambda^{{1/4}}, \qquad
+          \frac{\mathcal{{C}}}{\rho_{\gamma,0}} = \frac{7}{8}\left(\frac{4}{11}\right)^{4/3} \Delta N_\mathrm{{eff}}\,. $$
+        </p>
+      </div>
+    </section>
+
+    <section id="results">
+      <h2>Results (REALDATA pass)</h2>
+      <div class="grid">
+        <figure>
+          <img src="assets/images/PTA_fit_preview_REALDATA_WIDE_20250815_INST_ONLY.png" alt="PTA fit preview (wide)" />
+          <figcaption>PTA fit preview — instrument‑only overlay (wide, margin‑safe)</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/LISA_sensitivity_overlay_REALDATA_WIDE_20250815_INST_ONLY.png" alt="LISA sensitivity overlay (wide)" />
+          <figcaption>LISA sensitivity overlay — instrument‑only (wide, margin‑safe)</figcaption>
+        </figure>
+      </div>
+
+      <div class="card">
+        <strong>Numbers (illustrative):</strong>
+        <ul>
+          <li>Break frequency: $f_\mathrm{{br}} = 7.96\times 10^{{-9}}\,\mathrm{{Hz}}$ (68%: narrow demo interval)</li>
+          <li>Slopes: $m_1 \approx -0.92$, $m_2 \approx -1.52$</li>
+          <li>Prior used: Planck 2018 $\Delta N_\mathrm{{eff}} = 2.99 \pm 0.17$</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="downloads">
+      <h2>Downloads</h2>
+      <div class="downloads">
+        <a href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4.pdf">Two‑Pager (instrument‑only)</a>
+        <a href="assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v4.pdf">MASTER (4‑page, instrument‑only)</a>
+        <a href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4_CONFUSION.pdf">Two‑Pager (+confusion)</a>
+        <a href="assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v5_CONFUSION.pdf">MASTER (+confusion)</a>
+        <a href="assets/downloads/BestFit_with_uncertainties_20250815_071832.json">Best‑fit JSON</a>
+        <a href="assets/downloads/CMB_Planck2018_DeltaNeff_prior.json">Planck prior JSON</a>
+        <a href="assets/downloads/Press_Kit_Maldonado_TOE_20250816.pdf">Press Kit PDF</a>
+        <a href="assets/downloads/refs.bib">References (BibTeX)</a>
+      </div>
+    </section>
+
+    <section id="wip">
+      <h2>Work‑in‑Progress</h2>
+      <div class="card small">
+        Latest: wide, margin‑safe figures; +confusion variant placeholders; strict Zenodo pack; CKM/PMNS toy page. 
+        Next: optional corners ZIP; explicit compactification appendix for full SM embedding; joint PTA+CMB posteriors.
+      </div>
+      <div class="badges">
+        <span>REALDATA</span><span>PTA</span><span>LISA</span><span>ΔN_eff</span><span>Brane cosmology</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card small">
+        Email: <a href="mailto:sales@rank.vegas">sales@rank.vegas</a> • GitHub Pages mirrors the latest Zenodo “Data &amp; Repro Pack”.
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      © 2025 Ricardo Maldonado — CC BY 4.0 for data files unless noted. | Page version: 2025-08-16 | Overlay: LISA 10-yr instrument-only
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

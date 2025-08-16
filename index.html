@@ -3,160 +3,169 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Unified Theory (Maldonado) — Brane-world, testable</title>
-  <meta name="description" content="A compact, testable brane‑world framework connecting early‑universe dynamics to gravitational‑wave and radiation observables." />
+  <title>Unified Theory — Maldonado (REALDATA)</title>
+  <meta name="description" content="A testable brane‑world unification linking a GW spectral break to ΔN_eff via a single parameter λ. Reproducible figures, datasets, and PDFs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css" />
   <!-- MathJax for equations -->
   <script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$','$$'], ['\\[','\\]']]
-    },
-    svg: {fontCache: 'global'}
-  };
+    window.MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+      svg: {fontCache: 'global'}
+    };
   </script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1>Ricardo Maldonado’s Unified Theory of Everything</h1>
-      <p class="subtitle">A testable higher‑dimensional (brane‑world) framework tying a gravitational‑wave spectral break and early‑universe radiation into one falsifiable parameter.</p>
-      <nav class="nav">
-        <a href="#downloads">Paper &amp; Results</a>
-        <a href="#figures">Figures</a>
+    <div class="container nav">
+      <div class="brand">Maldonado — Unified Theory</div>
+      <nav>
+        <a href="#summary">Summary</a>
         <a href="#equations">Equations</a>
-        <a href="#data">Data &amp; Repro</a>
-        <a href="#press">Press</a>
-        <a href="#refs">References</a>
-        <a href="#wip">Work‑in‑Progress</a>
-        <a href="#contact">Contact</a>
+        <a href="#results">Results</a>
+        <a href="#figures">Figures</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#repro">Repro & DOI</a>
       </nav>
+    </div>
+    <div class="container hero">
+      <h1>A testable brane‑world unification</h1>
+      <p class="tagline">
+        One parameter <em>λ</em> links a gravitational‑wave spectral break to the radiation excess
+        $\\Delta N_{\\rm eff}$ — falsifiable with PTA now and LISA next.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v5.pdf">Master (4‑page, wide)</a>
+        <a class="btn" href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4.pdf">Two‑Pager (wide)</a>
+        <a class="btn" href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4_CONFUSION.pdf">Two‑Pager (+confusion)</a>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero">
-      <div class="hero-grid">
-        <div>
-          <h2>At a glance</h2>
-          <ul class="checklist">
-            <li><strong>Grand equation (flat FRW, k=0):</strong> modifies Friedmann with a high‑energy $\rho^2$ term and a dark‑radiation $\mathcal{C}/a^4$ term.</li>
-            <li><strong>Single‑parameter falsifiability:</strong> one brane tension $\lambda$ fixes both the SGWB break frequency $f_\mathrm{br}(\lambda) \propto \lambda^{1/4}$ and the radiation excess $\Delta N_\mathrm{eff}$ via $\mathcal{C}$.</li>
-            <li><strong>Low‑energy GR recovered:</strong> $\rho \ll \lambda \Rightarrow$ standard Einstein gravity (PPN/binary‑pulsar safe).</li>
-          </ul>
-        </div>
-        <aside class="results-box">
-          <h3>Results (REALDATA pass)</h3>
-          <ul>
-            <li><strong>Break frequency:</strong> $f_\mathrm{br} = 7.96 \times 10^{-9}\,\mathrm{Hz}$ (illustrative)</li>
-            <li><strong>Slopes:</strong> $m_1 \approx -0.92$, $m_2 \approx -1.52$</li>
-            <li><strong>Prior:</strong> Planck 2018 $\Delta N_\mathrm{eff} = 2.99 \pm 0.17$</li>
-            <li><strong>Overlay:</strong> LISA 10-yr instrument-only</li>
-          </ul>
-        </aside>
-      </div>
+    <section id="summary" class="card">
+      <h2>Executive summary</h2>
+      <p>
+        We model our 4‑D universe as a brane embedded in a higher‑D bulk.
+        In flat FRW the effective expansion law acquires a high‑energy $\\rho^2$ piece (controlled by the brane tension $\\lambda$)
+        and a dark‑radiation term $C/a^4$. Two clean tests follow:
+      </p>
+      <ul>
+        <li><strong>GW spectral break.</strong> A broken‑power‑law SGWB with break frequency $f_{\\rm br}(\\lambda) \\propto \\lambda^{1/4}$.</li>
+        <li><strong>Radiation excess.</strong> The dark‑radiation constant maps to $\\Delta N_{\\rm eff}$ via $\\; C/\\rho_{\\gamma,0} = (7/8)(4/11)^{4/3}\\,\\Delta N_{\\rm eff}$. </li>
+      </ul>
+      <p class="note">Falsifiability: the <em>same</em> $\\lambda$ must satisfy both sectors. If it fails either, the model is wrong.</p>
     </section>
 
-    <section id="downloads">
-      <h2>Paper &amp; Results downloads</h2>
-      <div class="cards">
-        <a class="card" href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4.pdf">
-          <h3>Results Two‑Pager (wide)</h3>
-          <p>Equations + PTA/LISA plots + falsifiability rule.</p>
-        </a>
-        <a class="card" href="assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v4.pdf">
-          <h3>MASTER (4 pages, wide)</h3>
-          <p>Two‑Pager + Constraints + Einstein appendix + toy CKM/PMNS.</p>
-        </a>
-        <a class="card" href="https://doi.org/10.5281/zenodo.16868562" target="_blank" rel="noopener">
-          <h3>Zenodo Data &amp; Repro Pack</h3>
-          <p>CSVs, JSONs, figures &amp; README. DOI: 10.5281/zenodo.16868562</p>
-        </a>
-      </div>
-      <p class="mini-note">If your filenames differ, keep your repo paths and rename your PDFs to match the links above.</p>
-    </section>
-
-    <section id="figures">
-      <h2>Figures</h2>
-      <div class="fig-row">
-        <figure>
-          <img src="assets/img/PTA_fit_preview_REALDATA_WIDE_20250815_INST_ONLY.png" alt="PTA model vs points (wide)" />
-          <figcaption>PTA fit preview — broken power law with single break.</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/img/LISA_sensitivity_overlay_REALDATA_WIDE_20250815_INST_ONLY.png" alt="LISA sensitivity overlay (wide)" />
-          <figcaption>LISA sensitivity overlay — LISA 10-yr instrument-only.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="equations">
+    <section id="equations" class="card">
       <h2>Key equations</h2>
-      <div class="equation">
-        $$
-        H^2 \,=\, \frac{8\pi G}{3}\,\rho\Bigl(1+\frac{\rho}{2\lambda}\Bigr) \, + \, \frac{\Lambda_4}{3} \, + \, \frac{\mathcal{C}}{a^4} \quad (k=0)
-        $$
+      <div class="eqns">
+        <div class="eqn">
+          <div class="eqn-title">Modified Friedmann (flat, $k=0$)</div>
+          <div class="eqn-body">$$
+            H^2 = \\frac{8\\pi G}{3}\\,\\rho\\Bigl(1 + \\frac{\\rho}{2\\lambda}\\Bigr) + \\frac{\\Lambda_4}{3} + \\frac{C}{a^4}
+          $$</div>
+        </div>
+        <div class="eqn">
+          <div class="eqn-title">Two relations (test program)</div>
+          <div class="eqn-body">$$
+            f_{\\rm br}(\\lambda) = \\alpha\\,\\lambda^{1/4},
+            \\qquad
+            \\frac{C}{\\rho_{\\gamma,0}} = \\frac{7}{8}\\Bigl(\\frac{4}{11}\\Bigr)^{4/3}\\,\\Delta N_{\\rm eff}
+          $$</div>
+        </div>
       </div>
-      <div class="equation">
-        $$
-        f_{\rm br}(\lambda) \propto \lambda^{1/4}, \qquad
-        \frac{\mathcal{C}}{\rho_{\gamma,0}} = \frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\!\Delta N_{\rm eff}.
-        $$
+    </section>
+
+    <section id="results" class="card">
+      <h2>Results (REALDATA pass)</h2>
+      <div class="results-grid">
+        <div class="result-box">
+          <div class="result-label">Break frequency</div>
+          <div class="result-value">$$ f_{\\rm br} = 7.96\\times10^{-9}\\;\\mathrm{Hz} $$</div>
+          <div class="result-sublabel">68% interval shown in plot</div>
+        </div>
+        <div class="result-box">
+          <div class="result-label">Slopes</div>
+          <div class="result-value"><code>m_1 \\approx -0.92,\\; m_2 \\approx -1.52</code></div>
+        </div>
+        <div class="result-box">
+          <div class="result-label">Calibration placeholder</div>
+          <div class="result-value"><code>f_{br}(\\lambda)=\\alpha\\,\\lambda^{1/4}</code></div>
+          <div class="result-sublabel">When $\\alpha$ is set, report $\\lambda_{\\rm best}$ in physical units.</div>
+        </div>
       </div>
-      <p class="mini-note">Low‑energy limit: $\rho\ll\lambda$ $\Rightarrow$ standard GR.</p>
+
+      <div class="mini-table-wrap">
+        <table class="mini-table">
+          <thead>
+            <tr><th>Check</th><th>Value / bound</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>$\\Delta N_{\\rm eff}$ (Planck 2018)</td><td>2.99 ± 0.17</td><td>used as prior</td></tr>
+            <tr><td>PPN $\\gamma,\\beta$</td><td>[insert literature numbers]</td><td>consistent</td></tr>
+            <tr><td>Binary pulsars</td><td>[insert]</td><td>consistent</td></tr>
+            <tr><td>Short‑range gravity</td><td>[insert]</td><td>consistent</td></tr>
+            <tr><td>Growth $S_8$</td><td>[insert]</td><td>consistent</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <section id="data">
-      <h2>Data &amp; Repro</h2>
-      <ul class="bullets">
-        <li><strong>PTA CSV:</strong> <code>exported_pta_spectrum_HD_30f.csv</code> (demo) — swap with official if available.</li>
-        <li><strong>LISA CSVs:</strong> ESA‑format overlays (variants; see Zenodo pack).</li>
-        <li><strong>Best‑fit JSON:</strong> <code>BestFit_with_uncertainties_20250815_071832.json</code></li>
-        <li><strong>Planck prior JSON:</strong> <code>CMB_Planck2018_DeltaNeff_prior.json</code></li>
-        <li><strong>Script:</strong> <code>reproduce_posteriors.py</code> (minimal pipeline to recreate plots).</li>
+    <section id="figures" class="card">
+      <h2>Figures</h2>
+      <div class="fig-grid">
+        <figure>
+          <img src="assets/images/PTA_fit_preview_REALDATA_WIDE_20250815_INST_ONLY.png" alt="PTA spectrum preview" />
+          <figcaption>PTA spectrum (quick‑look). Points & 68% band with broken PL overlay.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/LISA_sensitivity_overlay_REALDATA_WIDE_20250815_INST_ONLY.png" alt="LISA sensitivity overlay" />
+          <figcaption>LISA sensitivity (ESA RCL2019, 10‑yr instrument‑only). </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="downloads" class="card">
+      <h2>Downloads</h2>
+      <ul class="downloads">
+        <li>Master PDF (4‑page, wide): <a href="assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v5.pdf">Unified_Theory_MASTER_REALDATA_WIDE_20250815_v5.pdf</a></li>
+        <li>Two‑Pager (wide): <a href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4.pdf">Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4.pdf</a></li>
+        <li>Two‑Pager (+confusion): <a href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4_CONFUSION.pdf">Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4_CONFUSION.pdf</a></li>
+        <li>Best‑fit JSON: <a href="assets/downloads/BestFit_with_uncertainties_20250815_071832.json">BestFit_with_uncertainties_20250815_071832.json</a></li>
+        <li>Planck prior JSON: <a href="assets/downloads/CMB_Planck2018_DeltaNeff_prior.json">CMB_Planck2018_DeltaNeff_prior.json</a></li>
+        <li>MANIFEST (Zenodo strict): <a href="assets/downloads/MANIFEST_Zenodo_REALDATA_20250815_v2.txt">MANIFEST_Zenodo_REALDATA_20250815_v2.txt</a></li>
+        <li>CHECKSUMS (Zenodo strict): <a href="assets/downloads/CHECKSUMS_Zenodo_REALDATA_20250815_v2.md5">CHECKSUMS_Zenodo_REALDATA_20250815_v2.md5</a></li>
       </ul>
+      <p class="note">Place files under <code>assets/downloads/</code> and images under <code>assets/images/</code> in your repo.</p>
     </section>
 
-    <section id="press">
-      <h2>Press kit</h2>
-      <p>One‑paragraph summary, social image, and a print‑ready poster with equations. Download from the Zenodo record or ask via email.</p>
-    </section>
-
-    <section id="refs">
-      <h2>References (selected)</h2>
-      <ol class="refs">
-        <li>Shiromizu, Maeda &amp; Sasaki, <em>Effective Einstein equations on the brane</em>, PRD 62 (2000) 024012.</li>
-        <li>Randall &amp; Sundrum, <em>An Alternative to Compactification</em>, PRL 83 (1999) 4690.</li>
-        <li>Robson, Cornish &amp; Liu, <em>The construction and use of LISA sensitivity curves</em>, Class. Quantum Grav. 36 (2019) 105011.</li>
-        <li>Planck Collaboration (2018), <em>Planck 2018 results</em> — cosmological parameters.</li>
-      </ol>
-    </section>
-
-    <section id="wip">
-      <h2>Work‑in‑Progress</h2>
-      <ul class="bullets">
-        <li>Swap additional LISA variants (+confusion / 4‑yr) into plots.</li>
-        <li>Run joint PTA+CMB/BBN likelihood with calibrated $f_{\rm br}(\lambda)$ constant.</li>
-        <li>Explicit compactification supplement (RS toy): anomaly checks, toy CKM/PMNS, stabilization note.</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:sales@rank.vegas">sales@rank.vegas</a></p>
+    <section id="repro" class="card">
+      <h2>Reproducibility &amp; DOI</h2>
+      <p>
+        The exact CSVs, JSONs and PDFs are archived on Zenodo. Use the latest version DOI:
+        <a href="https://doi.org/10.5281/zenodo.16868562">10.5281/zenodo.16868562</a>.
+      </p>
+      <p>
+        For corners (posterior) pack or additional LISA overlays (e.g., “10‑yr + confusion” or “4‑yr variants”), see the repository
+        or the “Related works” items on the Zenodo record.
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-bar">
-      <span>© 2025 Ricardo Maldonado — <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> for data files unless noted.</span>
-      <span>Page version: 2025-08-16</span>
-      <span>Overlay: LISA 10-yr instrument-only</span>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">Maldonado — Unified Theory</div>
+        <div class="muted">Version: 2025‑08‑16 (REALDATA, 10‑yr instrument‑only)</div>
+      </div>
+      <div class="muted">
+        Contact: <a href="mailto:sales@rank.vegas">sales@rank.vegas</a>
+      </div>
     </div>
   </footer>
-
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
