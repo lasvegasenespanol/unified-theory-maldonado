@@ -1,0 +1,6 @@
+# MANIFEST — Zenodo strict pack (REALDATA, +confusion) — 2025-08-16
+Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4.pdf
+PTA_fit_preview_REALDATA_WIDE_20250815_INST_ONLY.png
+LISA_sensitivity_overlay_REALDATA_WIDE_20250815_INST_ONLY.png
+CMB_Planck2018_DeltaNeff_prior.json
+BestFit_with_uncertainties_20250815_071832.json
