@@ -1,7 +1,11 @@
-// main.js — smooth anchors and small helpers
-document.addEventListener('click', (e)=>{
-  const a = e.target.closest('a[href^="#"]');
-  if(!a) return;
-  const el = document.querySelector(a.getAttribute('href'));
-  if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+// Minimal script hook — extend as needed
+document.addEventListener('DOMContentLoaded', () => {
+  // Smooth scroll for nav
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth'}); }
+    });
+  });
 });
