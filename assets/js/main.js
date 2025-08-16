@@ -1,7 +1,7 @@
-
-document.querySelectorAll('details').forEach(d=>{
-  d.addEventListener('toggle', ()=>{
-    if(d.open){ d.querySelector('summary').classList.add('open'); }
-    else{ d.querySelector('summary').classList.remove('open'); }
-  })
+// main.js — smooth anchors and small helpers
+document.addEventListener('click', (e)=>{
+  const a = e.target.closest('a[href^="#"]');
+  if(!a) return;
+  const el = document.querySelector(a.getAttribute('href'));
+  if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
 });

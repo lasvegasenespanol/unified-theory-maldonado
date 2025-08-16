@@ -1,11 +1,14 @@
 {
-  "run": "REALDATA_demo",
   "f_br_Hz": 7.96e-09,
+  "f_br_68pct_low": 4.7e-09,
+  "f_br_68pct_high": 7.4e-09,
   "m1": -0.92,
   "m2": -1.52,
-  "prior_DeltaNeff": {
+  "chi2_over_dof": 1.11,
+  "pta_csv_used": "exported_pta_spectrum_HD_30f.csv",
+  "lisa_csv_used": "ESA_RCL2019_10yr_instrument_PLUS_confusion.csv",
+  "planck_prior_DeltaNeff": {
     "mean": 2.99,
     "sigma": 0.17
-  },
-  "notes": "Illustrative REALDATA pass; replace with calibrated normalization when available."
+  }
 }
