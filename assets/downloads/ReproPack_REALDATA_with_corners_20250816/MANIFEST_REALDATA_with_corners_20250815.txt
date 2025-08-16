@@ -1,0 +1,8 @@
+# Repro Pack (REALDATA with corners) — 2025-08-16
+Posterior_samples_REALDATA_20250815.csv
+Corner_marginal_log10fbr_REALDATA_20250815.png
+Corner_marginal_m1_REALDATA_20250815.png
+Corner_marginal_m2_REALDATA_20250815.png
+Corner_pair_log10fbr_vs_m1_REALDATA_20250815.png
+Corner_pair_log10fbr_vs_m2_REALDATA_20250815.png
+Corner_pair_m1_vs_m2_REALDATA_20250815.png
