@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this repository or dataset, please cite as below."
+title: "Data & Repro Pack for ‘A testable brane-world unification: one parameter links a GW spectral break and ΔN_eff’"
+authors:
+  - family-names: Maldonado
+    given-names: Ricardo
+    affiliation: Independent Researcher
+date-released: 2025-08-16
+doi: 10.5281/zenodo.16868562
+url: https://lasvegasenespanol.github.io/unified-theory-maldonado/
+keywords:
+  - gravitational waves
+  - stochastic background
+  - LISA
+  - pulsar timing arrays
+  - ΔN_eff
+  - brane cosmology
