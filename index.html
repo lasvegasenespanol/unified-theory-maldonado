@@ -1,116 +1,140 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Unified Theory — Maldonado</title>
-  <meta name="description" content="A compact, testable brane-world framework linking a GW spectral break and ΔN_eff, with reproducible data/plots." />
-  <link rel="stylesheet" href="assets/css/site.css" />
-  <script>
-    window.MathJax = {
-      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] },
-      svg: { fontCache: 'global' }
-    };
-  </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maldonado — Unified Theory (Brane-world, testable)</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <header class="hero">
-    <div class="wrap">
-      <h1>Ricardo Maldonado’s Unified Theory of Everything</h1>
-      <p class="tagline">A compact, testable brane‑world framework connecting early‑universe dynamics to gravitational‑wave and radiation observables.</p>
-      <div class="cta">
-        <a class="btn" href="assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v4.pdf">Master (4‑page, wide)</a>
-        <a class="btn ghost" href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4.pdf">Two‑Pager (wide)</a>
+  <div class="header">
+    <div class="wrapper">
+      <div class="hero">
+        <div>
+          <span class="badge">Research</span>
+          <span class="badge">Open data</span>
+          <h1>Ricardo Maldonado’s Unified Theory of Everything</h1>
+          <p class="tagline">A compact, testable brane‑world framework connecting early‑universe dynamics to gravitational‑wave and radiation observables.</p>
+          <div class="results-box">
+            <div class="kicker">Results (REALDATA pass)</div>
+            <div>Break frequency <code>f_{\rm br} = 7.96\times10^{-9}\,\mathrm{Hz}</code> (demo), slopes <code>m_1 \approx -0.92</code>, <code>m_2 \approx -1.52</code>. Prior: Planck 2018 <code>\Delta N_{\rm eff}=2.99\pm0.17</code>. Calibration placeholder: <code>f_{\rm br}(\lambda)=\alpha\,\lambda^{1/4}</code> → report <code>\lambda_{\rm best}</code> once \(\alpha\) is set.</div>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
+  </div>
 
-  <main class="wrap">
-    <section id="summary">
-      <h2>Executive Summary</h2>
-      <p>We model our 4‑D universe as a brane embedded in a higher‑D bulk. Projecting the higher‑D field equations yields a modified 4‑D Friedmann equation with a high‑energy correction and a dark‑radiation term. A single parameter—the brane tension $\lambda$—controls two clean, near‑term tests: a break in the stochastic gravitational‑wave background (SGWB) and an early‑time radiation excess $\Delta N_\mathrm{eff}$. The same $\lambda$ must satisfy both sectors, making the framework falsifiable.</p>
+  <div class="wrapper">
+    <div class="grid">
+      <section class="card">
+        <div class="kicker">Grand equation (flat FRW, k=0)</div>
+        <pre class="equation">$$
+H^2 = \frac{8\pi G}{3}\,\rho\!\left(1+\frac{\rho}{2\lambda}\right)
+\; +\; \frac{\Lambda_{4}}{3}\; +\; \frac{\mathcal{C}}{a^{4}}
+\quad (k=0)
+$$</pre>
+        <div class="kicker">Two test relations (falsifiable)</div>
+        <pre class="equation">$$
+f_{\rm br}(\lambda) \propto \lambda^{1/4},
+\qquad
+\frac{\mathcal{C}}{\rho_{\gamma,0}}=\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\Delta N_{\rm eff}.
+$$</pre>
+        <p class="small">Low‑energy limit recovers GR (\(\rho\ll\lambda\)).</p>
+        <hr>
+        <div class="kicker">Consistency & constraints (lite)</div>
+        <table>
+          <tr><th>Check</th><th>Value / bound</th><th>Status</th></tr>
+          <tr><td>Planck 2018 \(\Delta N_{\rm eff}\)</td><td>2.99 ± 0.17</td><td>used as prior</td></tr>
+          <tr><td>PPN \(\gamma,\beta\)</td><td>[literature bounds]</td><td>consistent (low‑energy)</td></tr>
+          <tr><td>Binary pulsars</td><td>[literature]</td><td>consistent</td></tr>
+          <tr><td>Short‑range gravity</td><td>[literature]</td><td>consistent</td></tr>
+          <tr><td>Growth \(S_8\)</td><td>[literature]</td><td>consistent</td></tr>
+        </table>
+      </section>
+
+      <aside class="card">
+        <div class="kicker">Figures (wide, margin‑safe)</div>
+        <div class="figure">
+          <img src="assets/images/PTA_fit_preview_REALDATA_WIDE_20250815_INST_ONLY.png" alt="PTA preview (instrument-only)">
+        </div>
+        <div class="figure">
+          <img src="assets/images/LISA_sensitivity_overlay_REALDATA_WIDE_20250815_INST_ONLY.png" alt="LISA overlay (instrument-only)">
+        </div>
+        <details>
+          <summary>Show +confusion variant</summary>
+          <div class="figure">
+            <img src="assets/images/PTA_fit_preview_REALDATA_WIDE_20250815_CONFUSION.png" alt="PTA preview (+confusion)">
+          </div>
+          <div class="figure">
+            <img src="assets/images/LISA_sensitivity_overlay_REALDATA_WIDE_20250815_CONFUSION.png" alt="LISA overlay (+confusion)">
+          </div>
+        </details>
+      </aside>
+    </div>
+
+    <section class="card">
+      <h2>Downloads</h2>
+      <div class="grid">
+        <div>
+          <div class="kicker">Master (4 pages)</div>
+          <div class="dl-list">
+            <a href="assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v5.pdf">MASTER (instrument‑only)</a>
+            <a href="assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v5_CONFUSION.pdf">MASTER (+confusion)</a>
+          </div>
+        </div>
+        <div>
+          <div class="kicker">Two‑Pager</div>
+          <div class="dl-list">
+            <a href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4.pdf">Two‑Pager (instrument‑only)</a>
+            <a href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4_CONFUSION.pdf">Two‑Pager (+confusion)</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="grid">
+        <div>
+          <div class="kicker">Repro essentials</div>
+          <div class="dl-list">
+            <a href="assets/downloads/BestFit_with_uncertainties_20250815_071832.json">Best‑fit + 68% ranges (JSON)</a>
+            <a href="assets/downloads/CMB_Planck2018_DeltaNeff_prior.json">Planck 2018 prior (ΔN_eff)</a>
+            <a href="assets/downloads/refs.bib">References (BibTeX)</a>
+            <a href="assets/downloads/MANIFEST_website_20250816.txt">MANIFEST (website assets)</a>
+            <a href="assets/downloads/CHECKSUMS_website_20250816.md5">CHECKSUMS (placeholder)</a>
+            <a href="assets/downloads/WIP_Log_20250816.md">Work‑in‑Progress log</a>
+          </div>
+        </div>
+        <div>
+          <div class="kicker">Press kit</div>
+          <div class="dl-list">
+            <a href="assets/downloads/Press_Kit_Maldonado_TOE_20250816.pdf">Press Kit (PDF)</a>
+            <a href="assets/images/press_kit_banner_1200x630.png">Social banner (1200×630 PNG)</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="equations">
-      <h2>Grand Equation &amp; Tests</h2>
-      <div class="equation">
-        $$H^2 = \frac{8\pi G}{3}\,\rho\Bigl(1+\frac{\rho}{2\lambda}\Bigr) + \frac{\Lambda_4}{3} + \frac{\mathcal{C}}{a^{4}}\quad (k=0)$$
-      </div>
-      <div class="equation small">
-        $$f_{\rm br}(\lambda) \propto \lambda^{1/4},\qquad
-          \frac{\mathcal{C}}{\rho_{\gamma,0}} = \frac{7}{8}\Bigl(\frac{4}{11}\Bigr)^{4/3}\,\Delta N_{\rm eff}.$$
-      </div>
-      <ul class="bullets">
-        <li><strong>GW break:</strong> transition from the $\rho^2$ era to standard 4‑D expansion.</li>
-        <li><strong>Radiation excess:</strong> dark‑radiation constant maps to $\Delta N_{\rm eff}$ (CMB/BBN constrained).</li>
-        <li><strong>GR recovery:</strong> low‑energy limit ($\rho\ll\lambda$) reduces to standard General Relativity.</li>
+    <section class="card">
+      <h2>Work‑in‑Progress</h2>
+      <p class="notice">Active items: (i) calibrate \(\alpha\) in \(f_{\rm br}(\lambda)=\alpha\,\lambda^{1/4}\) to quote \(\lambda_{\rm best}\) in physical units; (ii) optional joint‑fit corner plots; (iii) compactification supplement (toy CKM/PMNS page present; full anomaly checklist next).</p>
+      <p>See <a href="assets/downloads/WIP_Log_20250816.md">WIP_Log_20250816.md</a> for the running change log.</p>
+    </section>
+
+    <section class="card">
+      <h2>References</h2>
+      <ul>
+        <li>Robson, Cornish, Liu (2019) — LISA sensitivity curves — CQG 36, 105011. doi:10.1088/1361-6382/ab1101</li>
+        <li>Planck Collaboration (2018/2020) — Cosmological parameters — A&amp;A, doi:10.1051/0004-6361/201833910</li>
+        <li>Shiromizu, Maeda, Sasaki (2000) — Einstein eqs on the 3‑brane — PRD 62, 024012</li>
+        <li>NANOGrav 15‑year data set — KDE free spectrum package (PTA anchor)</li>
       </ul>
+      <p class="small">A full <code>refs.bib</code> is available above.</p>
     </section>
 
-    <section id="results">
-      <h2>Results (REALDATA pass)</h2>
-      <div class="results">
-        <ul>
-          <li><strong>Break frequency:</strong> $f_{\rm br}=7.96\times10^{-9}\,\mathrm{Hz}$ (illustrative REALDATA run).</li>
-          <li><strong>Slopes:</strong> $m_1\approx-0.92,\; m_2\approx-1.52$.</li>
-          <li><strong>Prior used:</strong> Planck 2018 $\Delta N_{\rm eff}=2.99\pm0.17$.</li>
-          <li><strong>Calibration placeholder:</strong> $f_{\rm br}(\lambda)=\alpha\,\lambda^{1/4}$ (report $\lambda$ once $\alpha$ is fixed).</li>
-          <li><strong>Data files:</strong> <code>exported_pta_spectrum_HD_30f.csv</code>, <code>ESA_RCL2019_10yr_instrument_ONLY_20250815.csv</code>.</li>
-        </ul>
-      </div>
-
-      <div class="figgrid">
-        <figure>
-          <img src="assets/images/PTA_fit_preview_REALDATA_WIDE_20250815_INST_ONLY.png" alt="PTA fit preview (REALDATA, wide)" />
-          <figcaption>PTA fit preview — model vs spectral points.</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/LISA_sensitivity_overlay_REALDATA_WIDE_20250815_INST_ONLY.png" alt="LISA sensitivity overlay (REALDATA, wide)" />
-          <figcaption>LISA sensitivity overlay (instrument‑only). +Confusion variant available below.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="constraints">
-      <h2>Consistency &amp; Constraints</h2>
-      <table class="table">
-        <thead><tr><th>Check</th><th>Value / bound</th><th>Status</th></tr></thead>
-        <tbody>
-          <tr><td>$\Delta N_{\rm eff}$ (Planck 2018)</td><td>2.99 $\pm$ 0.17</td><td>Used as prior</td></tr>
-          <tr><td>PPN $\gamma,\beta$</td><td>[literature]</td><td>Consistent (low‑energy GR)</td></tr>
-          <tr><td>Binary pulsars</td><td>[literature]</td><td>Consistent (late‑time)</td></tr>
-          <tr><td>Short‑range gravity</td><td>[literature]</td><td>Consistent</td></tr>
-          <tr><td>Growth $S_8$</td><td>[literature]</td><td>Consistent (illustrative)</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="downloads">
-      <h2>Data &amp; Repro Pack</h2>
-      <p>Everything needed to reproduce the plots and checks (CSV + JSON + PNGs + MANIFEST + CHECKSUMS):</p>
-      <ul class="downloads">
-        <li><a href="assets/downloads/Zenodo_Data_Repro_Pack_REALDATA_20250815_v2.zip">Strict Repro Pack (REALDATA)</a></li>
-        <li><a href="assets/downloads/BestFit_with_uncertainties_20250815_071832.json">Best‑fit + 68% (JSON)</a></li>
-        <li><a href="assets/downloads/CMB_Planck2018_DeltaNeff_prior.json">Planck 2018 $\Delta N_{\rm eff}$ prior (JSON)</a></li>
-        <li><a href="assets/downloads/MANIFEST_Zenodo_REALDATA_20250815_v2.txt">MANIFEST</a> &middot; <a href="assets/downloads/CHECKSUMS_Zenodo_REALDATA_20250815_v2.md5">CHECKSUMS</a></li>
-      </ul>
-
-      <h3>PDFs</h3>
-      <ul class="downloads">
-        <li><a href="assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v4.pdf">MASTER (instrument‑only)</a></li>
-        <li><a href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4.pdf">Two‑Pager (instrument‑only)</a></li>
-        <li><a href="assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v4_CONFUSION.pdf">MASTER (+confusion)</a> <span class="note">(upload later under this name)</span></li>
-        <li><a href="assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4_CONFUSION.pdf">Two‑Pager (+confusion)</a> <span class="note">(upload later under this name)</span></li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Questions / media / collaboration: <a href="mailto:sales@rank.vegas">sales@rank.vegas</a></p>
-      <p class="version">Version: 2025‑08‑16 &middot; Style: wide, margin‑safe &middot; LISA: 10‑yr instrument‑only</p>
-    </section>
-  </main>
+    <div class="footer small">
+      Version: 2025-08-16 · REALDATA · LISA instrument‑only & +confusion variants · CC BY 4.0
+    </div>
+  </div>
 
   <script src="assets/js/main.js"></script>
 </body>

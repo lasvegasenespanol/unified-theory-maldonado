@@ -1,34 +1,39 @@
-/* site.css — wide, margin-safe, clean */
+
+/* Minimal, clean, print-friendly */
 :root{
-  --bg:#0d0f14; --fg:#e9edf1; --muted:#aab6c5; --accent:#7ad1ff; --accent2:#9a89ff;
-  --card:#121622; --border:#22283a; --green:#47e7a5;
+  --bg:#0b0e14;
+  --panel:#111522;
+  --ink:#e6e6e6;
+  --muted:#b7c0d1;
+  --accent:#7aa2ff;
+  --green:#74d38a;
+  --red:#ff7a90;
 }
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
-.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
-.hero{background:linear-gradient(120deg,rgba(122,209,255,.08),rgba(154,137,255,.08));border-bottom:1px solid var(--border)}
-.hero .wrap{padding:48px 24px}
-h1{font-size:2.2rem;line-height:1.2;margin:0 0 10px}
-.tagline{color:var(--muted);margin:0 0 18px}
-h2{font-size:1.4rem;margin:28px 0 10px}
-p{margin:0 0 12px}
+html,body{margin:0;padding:0;color:var(--ink);background:var(--bg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
-.btn{display:inline-block;background:var(--accent);color:#001018;padding:10px 14px;border-radius:10px;font-weight:700;margin-right:10px}
-.btn.ghost{background:transparent;border:1px solid var(--accent);color:var(--accent)}
-.note{color:var(--muted);font-size:.9em}
-.equation{background:var(--card);border:1px solid var(--border);padding:16px;border-radius:12px;overflow:auto;margin:12px 0}
-.equation.small{font-size:0.95rem}
-.results ul{margin:0;padding-left:18px}
-.results li{margin:6px 0}
-.figgrid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:10px}
-@media(min-width:880px){.figgrid{grid-template-columns:1fr 1fr}}
-figure{background:var(--card);border:1px solid var(--border);border-radius:12px;margin:0;padding:12px}
-figcaption{color:var(--muted);font-size:.95em;margin-top:8px}
-.table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
-.table th,.table td{padding:10px;border-bottom:1px solid var(--border);text-align:left}
-.table thead th{background:#151a28}
-.downloads{list-style:none;padding:0;margin:0}
-.downloads li{padding:8px 0;border-bottom:1px dashed var(--border)}
-.version{color:var(--muted)}
-code{background:#0c111c;border:1px solid var(--border);padding:.1rem .3rem;border-radius:8px}
+.wrapper{max-width:1100px;margin:0 auto;padding:24px}
+.header{background:linear-gradient(180deg,#0b0e14 0%,#0f1423 100%);border-bottom:1px solid #1b2134}
+.hero{display:grid;gap:18px;padding:28px;border:1px solid #1b2134;background:var(--panel);border-radius:14px}
+.hero h1{font-size:28px;margin:0 0 6px 0}
+.hero .tagline{color:var(--muted)}
+.grid{display:grid;gap:18px}
+@media(min-width:900px){.grid{grid-template-columns:1.3fr 1fr}}
+.card{border:1px solid #1b2134;background:#0c1020;border-radius:14px;padding:18px}
+.card h2{margin:0 0 12px 0;font-size:20px}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
+.results-box{border:1px dashed #2a3454;border-radius:12px;padding:12px;margin-top:10px;background:#0e1428}
+.results-box code{background:#0b1022;padding:0 6px;border-radius:6px}
+.figure{margin:8px 0;border:1px solid #1b2134;border-radius:8px;padding:10px;background:#0b0f1f}
+.figure img{width:100%;height:auto;display:block;border-radius:6px}
+.dl-list a{display:block;margin:6px 0;padding:8px 10px;border:1px solid #1b2134;border-radius:10px;background:#0b1022}
+.small{font-size:13px;color:var(--muted)}
+.footer{margin-top:24px;padding:18px 0;border-top:1px solid #1b2134;color:var(--muted)}
+pre.equation{overflow:auto;background:#0b1022;border:1px solid #1b2134;border-radius:10px;padding:12px}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;background:#142044;color:var(--ink);font-size:12px;margin-right:6px}
+hr{border:0;border-top:1px solid #1b2134;margin:18px 0}
+table{width:100%;border-collapse:collapse;margin:8px 0}
+td,th{border:1px solid #1b2134;padding:6px 8px;text-align:left}
+blockquote{border-left:3px solid #253058;margin:8px 0;padding:8px 12px;background:#0b0f1f;color:var(--muted)}
+.notice{background:#0b0f1f;border:1px solid #253058;border-radius:10px;padding:10px}

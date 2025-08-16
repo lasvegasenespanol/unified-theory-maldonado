@@ -1,0 +1,14 @@
+# MANIFEST (REALDATA strict pack + +confusion variant) — 2025-08-16
+assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4.pdf            (instrument-only; existing)
+assets/downloads/Results_TwoPager_REALDATA_WIDE_FINAL_20250815_v4_CONFUSION.pdf  (+confusion; this file)
+assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v5.pdf             (instrument-only; existing)
+assets/downloads/Unified_Theory_MASTER_REALDATA_WIDE_20250815_v5_CONFUSION.pdf   (+confusion; this file)
+assets/downloads/BestFit_with_uncertainties_20250815_071832.json
+assets/downloads/CMB_Planck2018_DeltaNeff_prior.json
+assets/downloads/refs.bib
+assets/images/PTA_fit_preview_REALDATA_WIDE_20250815_INST_ONLY.png               (existing)
+assets/images/LISA_sensitivity_overlay_REALDATA_WIDE_20250815_INST_ONLY.png      (existing)
+assets/images/PTA_fit_preview_REALDATA_WIDE_20250815_CONFUSION.png               (this file)
+assets/images/LISA_sensitivity_overlay_REALDATA_WIDE_20250815_CONFUSION.png      (this file)
+assets/downloads/Press_Kit_Maldonado_TOE_20250816.pdf
+assets/images/press_kit_banner_1200x630.png
